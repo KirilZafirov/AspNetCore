@@ -5,7 +5,7 @@ namespace DTO
    using System.ComponentModel.DataAnnotations.Schema;
    using System.Linq;
 
-   public partial class NorthwindModelDbContext : DbContext
+   public class NorthwindModelDbContext : DbContext
    {
       public NorthwindModelDbContext()
           : base("name=DBFirstModel")

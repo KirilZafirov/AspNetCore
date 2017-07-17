@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWebAPI", "AspNetCoreWebAPI\AspNetCoreWebAPI.csproj", "{DD59D2A6-941A-4773-B1DD-78F6801F96C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApiNet", "CoreWebApiNet\CoreWebApiNet.csproj", "{31290CAC-4EB6-422A-90EF-9F95BE463C4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DD59D2A6-941A-4773-B1DD-78F6801F96C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD59D2A6-941A-4773-B1DD-78F6801F96C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD59D2A6-941A-4773-B1DD-78F6801F96C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31290CAC-4EB6-422A-90EF-9F95BE463C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31290CAC-4EB6-422A-90EF-9F95BE463C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31290CAC-4EB6-422A-90EF-9F95BE463C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31290CAC-4EB6-422A-90EF-9F95BE463C4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
