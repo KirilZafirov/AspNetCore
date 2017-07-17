@@ -7,13 +7,17 @@ using DTO;
 
 namespace Nortwind.Repository
 {
-  public class OrdersRepository
+  public class OrdersRepository : IOrdersRepository
    {
-      private NorthwindModelDbContext context;
+      private NorthwindModelDbContext _context;
 
+      public OrdersRepository(NorthwindModelDbContext context)
+      {
+         _context = context;
+      }
       public IEnumerable<Order> GetOrders()
       {
-         return context.Orders;
+         return _context.Orders;
       }
    }
 }

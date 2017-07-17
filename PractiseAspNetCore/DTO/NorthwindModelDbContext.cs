@@ -1,14 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
 namespace DTO
 {
    using System;
    using System.Data.Entity;
-   using System.ComponentModel.DataAnnotations.Schema;
-   using System.Linq;
 
    public class NorthwindModelDbContext : DbContext
    {
       public NorthwindModelDbContext()
-          : base("name=DBFirstModel")
+          : base("name=DefaultConnection")
       {
       }
 
@@ -95,4 +96,21 @@ namespace DTO
              .IsFixedLength();
       }
    }
+   //public class SchoolDbContextFactory : System.Data.Entity.Infrastructure.IDbContextFactory<NorthwindModelDbContext>
+   //{
+   //   public NorthwindModelDbContext Create(DbContextFactoryOptions options)
+   //   {
+   //      var builder = new DbContextOptionsBuilder<NorthwindModelDbContext>();
+   //      builder.UseSqlServer("data source=ATSMKNB009;initial catalog=NORTHWND;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework");
+   //      return new NorthwindModelDbContext(builder.Options);
+   //   }
+   //}
+   //public static class ServiceCollectionExtensions
+   //{
+   //   public static void AddEntityFramework(this IServiceCollection services, string connectionString)
+   //   {
+   //      services.AddDbContext<NorthwindModelDbContext>(options =>
+   //         options.UseSqlServer(connectionString));
+   //   }
+   //}
 }
