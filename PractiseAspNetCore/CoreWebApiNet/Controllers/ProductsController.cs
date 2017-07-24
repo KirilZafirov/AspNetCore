@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CoreWebApiNet.Models;
+using Northwind.Entities;
 
 namespace CoreWebApiNet.Controllers
 {
@@ -13,9 +13,9 @@ namespace CoreWebApiNet.Controllers
     [Route("api/Products")]
     public class ProductsController : Controller
     {
-        private readonly NORTHWNDContext _context;
+        private readonly NorthwindModelDbContext _context;
 
-        public ProductsController(NORTHWNDContext context)
+        public ProductsController(NorthwindModelDbContext context)
         {
             _context = context;
         }

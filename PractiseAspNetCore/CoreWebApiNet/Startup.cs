@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CoreWebApiNet.Models;
-using CoreWebApiNet.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Northwind.Entities;
+using Nortwind.Repository;
 
 namespace CoreWebApiNet
 {
@@ -31,12 +31,14 @@ namespace CoreWebApiNet
         public void ConfigureServices(IServiceCollection services)
         {
          // Add framework services.
-        
          services.AddMvc();
-           var connection = @"data source=ATSMKNB009;initial catalog=NORTHWND;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework";
-           services.AddDbContext<NORTHWNDContext>(options => options.UseSqlServer(connection));
-   
-      }
+         
+         services.AddDbContext<NorthwindModelDbContext>(
+              options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+           services.AddScoped<IOrdersRepository,OrdersRepository>();
+        }
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

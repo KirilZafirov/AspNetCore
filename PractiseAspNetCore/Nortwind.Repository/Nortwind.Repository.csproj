@@ -216,9 +216,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DTO\DTO.csproj">
+    <ProjectReference Include="..\DTO\Northwind.Entities.csproj">
       <Project>{e760ce35-4b59-4a49-8173-96a1a68e257e}</Project>
-      <Name>DTO</Name>
+      <Name>Northwind.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

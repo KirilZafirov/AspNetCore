@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.Repository", "Nortwind.Repository\Nortwind.Repository.csproj", "{9DA5A563-7506-485D-8B48-6680D6A1BC54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{E760CE35-4B59-4A49-8173-96A1A68E257E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Entities", "DTO\Northwind.Entities.csproj", "{E760CE35-4B59-4A49-8173-96A1A68E257E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWebAPI", "AspNetCoreWebAPI\AspNetCoreWebAPI.csproj", "{DD59D2A6-941A-4773-B1DD-78F6801F96C4}"
 EndProject

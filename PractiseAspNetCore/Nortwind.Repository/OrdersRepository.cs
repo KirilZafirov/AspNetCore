@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DTO;
+using Northwind.Entities;
 
 namespace Nortwind.Repository
 {
@@ -15,7 +15,7 @@ namespace Nortwind.Repository
       {
          _context = context;
       }
-      public IEnumerable<Order> GetOrders()
+      public IEnumerable<Orders> GetOrders()
       {
          return _context.Orders;
       }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CoreWebApiNet.Models
+namespace Northwind.Entities
 {
     public partial class Employees
     {
